@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Sistema Bioquímico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-background bio-background">
+    <div class="shape shape-one"></div>
+    <div class="shape shape-two"></div>
+    <div class="shape shape-three"></div>
+
+    <span class="bio-bubble bubble-1"></span>
+    <span class="bio-bubble bubble-2"></span>
+    <span class="bio-bubble bubble-3"></span>
+    <span class="bio-bubble bubble-4"></span>
+    <span class="bio-bubble bubble-5"></span>
+
+    <div class="molecule molecule-one">
+      <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="molecule molecule-two">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <main class="dashboard-page bio-dashboard-page">
+
+    <header class="dashboard-header bio-dashboard-header">
+      <div>
+        <span class="dashboard-badge">Sistema Bioquímico Multiplataforma</span>
+        <h1>Panel principal</h1>
+        <p id="bienvenida">Bienvenido al sistema</p>
+      </div>
+
+      <button class="logout-top" id="logoutBtn">Cerrar sesión</button>
+    </header>
+
+    <section class="dashboard-access">
+
+      <div class="access-button laboratorio bio-access-card" data-module="laboratorio">
+        <span class="module-chip">LAB</span>
+        <div class="card-glow"></div>
+        <h2>Servicio de Laboratorio</h2>
+        <p>Gestión de pacientes, pruebas, resultados, entregas impresas, inventario e historial.</p>
+        <button>Ingresar</button>
+      </div>
+
+      <div class="access-button veterinaria bio-access-card" data-module="veterinaria">
+        <span class="module-chip">VET</span>
+        <div class="card-glow"></div>
+        <h2>Veterinaria</h2>
+        <p>Gestión de mascotas, propietarios, consultas, tratamientos, vacunas y diagnósticos.</p>
+        <button>Ingresar</button>
+      </div>
+
+      <div class="access-button adm bio-access-card" data-module="adm">
+        <span class="module-chip">ADM</span>
+        <div class="card-glow"></div>
+        <h2>Administración</h2>
+        <p>Control de usuarios, permisos, roles, aprobaciones y configuración general del sistema.</p>
+        <button>Ingresar</button>
+      </div>
+
+    </section>
+
+    <section class="module-preview bio-module-preview" id="modulePreview">
+      <h2>Seleccione un módulo</h2>
+      <p>Presione uno de los accesos para ingresar al área correspondiente.</p>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Sistema Multiplataforma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+
+  <div class="login-background bio-background">
+  <div class="shape shape-one"></div>
+  <div class="shape shape-two"></div>
+  <div class="shape shape-three"></div>
+
+  <span class="bio-bubble bubble-1"></span>
+  <span class="bio-bubble bubble-2"></span>
+  <span class="bio-bubble bubble-3"></span>
+  <span class="bio-bubble bubble-4"></span>
+  <span class="bio-bubble bubble-5"></span>
+
+  <div class="molecule molecule-one">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="molecule molecule-two">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+  <main class="login-page">
+
+<section class="login-welcome">
+  <div class="welcome-badge">Sistema Bioquímico Multiplataforma</div>
+
+  <h1>Bienvenido nuevamente</h1>
+
+  <p>
+    Accede a tu panel de trabajo para gestionar laboratorio,
+    veterinaria y administración desde cualquier dispositivo.
+  </p>
+
+  <div class="bio-visual-card">
+    <div class="dna-wrapper">
+      <div class="dna-line"></div>
+
+      <span style="--i:0"></span>
+      <span style="--i:1"></span>
+      <span style="--i:2"></span>
+      <span style="--i:3"></span>
+      <span style="--i:4"></span>
+      <span style="--i:5"></span>
+      <span style="--i:6"></span>
+      <span style="--i:7"></span>
+    </div>
+
+    <div class="bio-info-text">
+      <strong>Panel inteligente</strong>
+      <span>Laboratorio, pruebas, inventario y reportes en tiempo real.</span>
+    </div>
+  </div>
+
+  <div class="welcome-info">
+    ...
+  </div>
+</section>
+
+    <section class="login-card modern-login-card">
+      <div class="login-logo">
+        <div class="logo-circle">BIO</div>
+        <div>
+<h2>Acceso al sistema</h2>
+<p>Ingresa a tu entorno bioquímico</p>
+        </div>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label>Correo electrónico</label>
+          <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+        </div>
+
+        <button type="submit" class="login-main-btn">Ingresar al sistema</button>
+      </form>
+
+      <div class="login-footer">
+        <span>¿Todavía no tienes cuenta?</span>
+        <a href="registro.html" class="register-link">Crear cuenta</a>
+      </div>
+
+      <p id="mensajeError" class="error"></p>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

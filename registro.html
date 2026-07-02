@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta | Sistema Multiplataforma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Crear cuenta</h1>
+      <p>Su cuenta deberá ser aprobada por el administrador.</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label>Nombre completo</label>
+          <input type="text" id="fullName" placeholder="Ingrese su nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label>Correo electrónico</label>
+          <input type="email" id="registerEmail" placeholder="Ingrese su correo" required>
+        </div>
+
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" id="registerPassword" placeholder="Cree una contraseña" required>
+        </div>
+
+        <div class="form-group">
+          <label>Área solicitada</label>
+          <select id="registerRole" required>
+            <option value="">Seleccione un área</option>
+            <option value="laboratorio">Servicio de Laboratorio</option>
+            <option value="veterinaria">Veterinaria</option>
+          </select>
+        </div>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+
+      <a href="index.html" class="register-link">Volver al login</a>
+
+      <p id="registerMessage" class="message"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
