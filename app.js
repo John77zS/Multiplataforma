@@ -187,7 +187,7 @@ accesos.forEach(acceso => {
     if (modulo === "veterinaria") {
       modulePreview.innerHTML = `
         <h2>Veterinaria</h2>
-        <p>En este módulo se podrá gestionar pacientes veterinarios, dueños, consultas, tratamientos y vacunas.</p>
+        <p>Este modulo aun esta en construccion</p>
 
         <div class="mini-panel">
           <p><strong>Funciones futuras:</strong></p>
